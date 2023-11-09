@@ -1,19 +1,22 @@
 ﻿// Copy_constructor.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
-#include "Copy.h"
+#include "DynArray.h"
 
 
 int main()
 {
-	Copy a(2, 3);
-	Copy b{ a };
-	cout << "a = ";
-	a.print();
-	cout << "b = ";
-	b.print();
-
-
+	setlocale(LC_ALL, "rus");
+	DynArray ar1{ 10 };
+	DynArray ar2{ ar1 };
+	int g = 4;
+	cout << ar1.sum(4) << endl;
+	try {
+		cin >> g;
+	}
+	catch (exception e) {
+		cout << "Error" << endl;
+	}
 
 }
 
