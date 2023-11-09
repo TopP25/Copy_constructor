@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="Copy_constructor.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Copy.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

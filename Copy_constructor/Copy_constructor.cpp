@@ -1,11 +1,20 @@
 ﻿// Copy_constructor.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
-#include <iostream>
+#include "Copy.h"
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Copy a(2, 3);
+	Copy b{ a };
+	cout << "a = ";
+	a.print();
+	cout << "b = ";
+	b.print();
+
+
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
